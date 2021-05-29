@@ -1,0 +1,80 @@
+//colors
+$accent: #4ECCA3;
+$lightest: #EEE;
+$dark: #393E46;
+$darkest: #232931;
+
+//------recycle bin------
+// text-shadow:
+    //     -0.5px -0.5px $darkest,
+    //     0.5px -0.5px $darkest,
+    //     -0.5px 0.5px $darkest,
+    //     0.5px 0.5px $darkest;
+
+body{
+    background-color: $darkest;
+    margin-left: 0px; 
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+header{
+    color: $darkest;
+    background: $accent;
+    font-family: Adam, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke:2px $darkest;
+    
+
+    img{
+        margin: 2% 0 2% 5%;
+        width: 10%;
+    }
+    ul{
+        float: right;
+        margin: 4% 5% 0% 0%;
+        padding: 0;
+        li{
+            display: inline;
+            padding: 0.5em;
+            font-size: 1.5em;
+            
+
+            a{
+                display: inline-block;
+                color: $darkest;
+                text-decoration: none;
+                padding: .5em 1em;
+                
+                &:hover{
+                    color: $lightest;
+                    border: 2px solid $lightest;
+                    text-decoration: none;
+                    transition: all ease .5s;
+                }
+            }
+            
+        }
+    }
+}
+
+.section1{
+    height: 100%;
+    width: 100%;
+    background: url(../img/pexels-marcin-dampc-1684187.jpg);
+    background-size: cover;
+
+    color: $lightest;
+    font-family: ADAM;
+    H2{
+        font-size: 3em;
+        text-shadow:
+             -2px 2px 0px $dark;
+       -webkit-text-stroke:1px $lightest;
+        //background: rgba($dark, 0.3);
+
+    }
+    h3{
+        background: rgba($dark, 0.3);
+    }
+}
