@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kaloo Events</title>
  <!-- Bootstrap link/version -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" rel="stylesheet" crossorigin="anonymous">
+        <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
  <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <!-- Main stylesheet -->
@@ -19,7 +19,7 @@
                         <nav>
                             <img src="img\logodark.png" alt="Kaloo logo">
                             <ul>
-                                <li class="col-sm btn">SEARCH EVENTS</li>
+                                <li class="col-sm btn" href="#searchevent" >SEARCH EVENTS</li>
                                 <li class="col-sm btn"> I </li>
                                 <li class="col-sm btn">LOG IN</li>
                             </ul>                
@@ -28,34 +28,146 @@
             </header>
 
 <!--Seccion 1-->
-        <div class="row section1">
+        <div class="row section1 container-fluid">
             <div class="col-3">
                     <h2>Color Festival</h2>
-                    <!-- insert location logo -->
                     <h3>
-                        Highland park <br>
-                        $10 per person
+                        <img src="img\icons\location.svg" alt="location icon">Park park color park <br>
+                        <br>
+                        Join us in this colorful and fun event for the whole family!<br>
+                        <br>
+                        <img src="img\icons\date.svg" alt="date icon"> 07/22 <img src="img\icons\time.svg" alt="clock icon"> 1:00pm
                     </h3>
             </div>
-            <div class="col-3"> 
-                    <!-- space -->
+
+            <div class="col-5">
+                    <!-- in between space -->
             </div>
-            <div class="col-3"> Reserve </div>
+            
+            <div class="col-3">
+                    <button class="btn-dark" href="https://kaloo.test/event.html">MORE INFO</button>
+                </div>
         </div>
 
-<!--Seccion 2-->
-        <div class="row section2">
-           
+<!--Seccion 2 -->
+        <div class="row section2" id="searchevent">
+                <div class="row navbar navbar-expand-lg navbar-light ">
+                        <div class="col-6">
+                                <h2>SEARCH EVENTS</h2>
+                        </div>
+                        <div class="col-2">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                SELECT CATEGORY
+                              </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">FESTIVAL</a>
+                                <a class="dropdown-item" href="#">MUSIC</a>
+                                <a class="dropdown-divider"></a>
+                                <a class="dropdown-item" href="#">COCKTAIL PARTY</a>
+                        </div>
+                        </div>
+                        <div class="col-4">
+                                <div class="row">
+                                        <div class="col-10"><input type="text" class="form-control" placeholder="Search"></div>
+                                <div class="col-1"><button class="btn btn-outline-secondary" type="img"></button></div>
+                                </div>
+                                
+                        </div>
+                </div> 
+
+                 <div class="row search-result container-fluid">
+                        
+
+                        <div class="row search-info1">
+                                
+                                <div class="col-3"><h3>Aoki: Back</h3></div>
+                                <div class="col-3"><h3><img src="img\icons\location.svg" alt="location icon">Hawaii Lounge</h3></div>
+                                <div class="col-2"><h3>$50 x ticket</h3></div>
+                                <div class="col-4">
+                                         <h3><img src="img\icons\date.svg" alt="location icon"> 02<span>/</span>31
+
+                                        <img src="img\icons\time.svg" alt="location icon"> 8:00pm </h3></div>
+                        </div>
+
+                        <div class="row search-info2">
+                                
+                                <div class="col-3"><h3>Rave NYE Party</h3></div>
+                                <div class="col-3"><h3> <img src="img\icons\location.svg" alt="location icon">Alterno House</h3></div>
+                                <div class="col-2"><h3>$100 x ticket</h3></div>
+                                <div class="col-4">
+                                        <h3><img src="img\icons\date.svg" alt="location icon"> 12<span>/</span>31
+
+                                        <img src="img\icons\time.svg" alt="location icon"> 10:00pm </h3></div>
+                        </div>
+
+                        <div class="row search-info3">
+                                
+                                <div class="col-3"><h3>DJ Rex's debut</h3></div>
+                                <div class="col-3"><h3><img src="img\icons\location.svg" alt="location icon">Venue</h3></div>
+                                <div class="col-2"><h3>$15 x ticket</h3></div>
+                                <div class="col-4">
+                                        <h3><img src="img\icons\date.svg" alt="location icon">05<span>/</span>09
+
+                                        <img src="img\icons\time.svg" alt="location icon"> 6:00pm </h3></div>
+                        </div>
+                 </div> 
+                 <!-- Search results end -->
         </div>
 
 <!--Seccion 3-->
-        <div class="row section3">
+        <div class="row section3 container-fluid">
+                <div class="row">
+                        <div class="col-4">
+                                <h2>POPULAR EVENTS</h2>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-1"> </div>
+                        <div class="col">
+                                <div class="card">
+                                        <img class="card-img" src="img\pexels-wendy-wei-1190298cropportait.jpg" alt="Card image">
+                                        <div class="card-img-overlay">
+                                        <p class="card-text">Rave <br> NYE Party</p>
+                                        <button class="btn">MORE INFO</button>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col">
+                                <div class="card">
+                                        <img class="card-img" src="img\pexels-mentatdgt-1185440cropportrait.jpg" alt="Card image">
+                                        <div class="card-img-overlay">
+                                        <p class="card-text">Coctail <br> Night</p>
+                                        <button class="btn">MORE INFO</button>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col">
+                                <div class="card">
+                                        <img class="card-img" src="img\pexels-ron-lach-7884124.jpg" alt="Card image">
+                                        <div class="card-img-overlay">
+                                        <p class="card-text">Betty's <br> B-day</p>
+                                        <button class="btn">MORE INFO</button>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col">
+                                <div class="card">
+                                        <img class="card-img" src="img\pexels-wendy-wei-2513612.jpg" alt="Card image">
+                                        <div class="card-img-overlay">
+                                        <p class="card-text">Burning <br> Man</p>
+                                        <button class="btn">MORE INFO</button>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-1"> </div>
+                </div>
 
         </div>
 
 <!--Seccion 4-->
-        <div class="row section4">
-
+        <div class="row section4 container-fluid">
+                footer
+                
         </div>
 
 <!--Seccion 5-->
